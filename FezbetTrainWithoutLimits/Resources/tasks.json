@@ -1,0 +1,692 @@
+[
+    {
+        "id": "D6E7F8A9-B0C1-42D3-E4F5-A6B7C8D9E0F1",
+        "title": "Desert Sprint Intervals",
+        "difficulty": "Hard",
+        "imageName": "task_sprint_sand",
+        "description": "High-intensity interval training designed to boost your VO2 max and explosive power on sandy terrain. Use the natural resistance of the ground to build leg strength.",
+        "isPremium": false,
+        "steps": [
+            {
+                "id": "S1",
+                "title": "Warm-up Jog",
+                "description": "Light jogging on firm ground to increase body temperature. Focus on breathing and rhythm.",
+                "durationSeconds": 300
+            },
+            {
+                "id": "S2",
+                "title": "Dynamic Stretching",
+                "description": "High knees, butt kicks, and leg swings. Prepare the hamstrings and calves for explosive work.",
+                "durationSeconds": 180
+            },
+            {
+                "id": "S3",
+                "title": "Sprint 1: 30m Burst",
+                "description": "Find a sandy patch. Sprint at 90% effort for 30 meters. Drive knees high.",
+                "durationSeconds": 30
+            },
+            {
+                "id": "S4",
+                "title": "Recovery Walk",
+                "description": "Walk back to the start line slowly. Deep nasal breathing.",
+                "durationSeconds": 60
+            },
+            {
+                "id": "S5",
+                "title": "Sprint 2: 30m Burst",
+                "description": "Repeat the sprint. Focus on arm mechanics to drive momentum.",
+                "durationSeconds": 30
+            },
+            {
+                "id": "S6",
+                "title": "Cool Down",
+                "description": "Slow walk and static stretching. Focus on calves.",
+                "durationSeconds": 300
+            }
+        ]
+    },
+    {
+        "id": "E7F8A9B0-C1D2-43E4-F5A6-B7C8D9E0F1A2",
+        "title": "Ball Control in Dust",
+        "difficulty": "Medium",
+        "imageName": "task_ball_control_dust",
+        "description": "Mastering the ball when visibility is low and the ground is unpredictable. Improves reaction time and close control.",
+        "isPremium": false,
+        "steps": [
+            {
+                "id": "S1",
+                "title": "Toe Taps",
+                "description": "Rapid alternating touches on top of the ball. Keep the ball stationary in the dust.",
+                "durationSeconds": 60
+            },
+            {
+                "id": "S2",
+                "title": "Inside-Outside Cuts",
+                "description": "Use the inside and outside of one foot to move the ball laterally. Keep it close.",
+                "durationSeconds": 120
+            },
+            {
+                "id": "S3",
+                "title": "Figure 8 Dribble",
+                "description": "Dribble around two cones placed 2 meters apart in a figure 8 pattern.",
+                "durationSeconds": 180
+            },
+            {
+                "id": "S4",
+                "title": "Aerial Control",
+                "description": "Throw the ball up and control it instantly with different parts of the foot.",
+                "durationSeconds": 120
+            },
+            {
+                "id": "S5",
+                "title": "Turn and Sprint",
+                "description": "Dribble forward, perform a Cruyff turn, and accelerate 5 meters away.",
+                "durationSeconds": 180
+            },
+            {
+                "id": "S6",
+                "title": "Freestyle Juggle",
+                "description": "Keep the ball in the air. Focus on low, controlled touches.",
+                "durationSeconds": 120
+            }
+        ]
+    },
+    {
+        "id": "F8A9B0C1-D2E3-44F5-A6B7-C8D9E0F1A2B3",
+        "title": "Heat Acclimatization Walk",
+        "difficulty": "Easy",
+        "imageName": "task_heat_acclimatization",
+        "description": "A low-intensity session to help your body adapt to high temperatures safely. Perfect for the first day of the season.",
+        "isPremium": false,
+        "steps": [
+            {
+                "id": "S1",
+                "title": "Preparation",
+                "description": "Apply sunscreen and drink 500ml of water. Wear a hat.",
+                "durationSeconds": 60
+            },
+            {
+                "id": "S2",
+                "title": "Brisk Walk",
+                "description": "Walk at a pace where you can hold a conversation but feel warm.",
+                "durationSeconds": 600
+            },
+            {
+                "id": "S3",
+                "title": "Basic Mobility",
+                "description": "Stop and perform arm circles and hip rotations while standing in the sun.",
+                "durationSeconds": 120
+            },
+            {
+                "id": "S4",
+                "title": "Jog",
+                "description": "Very light jog. RPE 3/10. Focus on sweat sensing.",
+                "durationSeconds": 300
+            },
+            {
+                "id": "S5",
+                "title": "Hydration Break",
+                "description": "Stop and drink. Assess how you feel. Any dizziness?",
+                "durationSeconds": 120
+            },
+            {
+                "id": "S6",
+                "title": "Finish",
+                "description": "Walk home or to the changing room. Cool towel immediately.",
+                "durationSeconds": 300
+            }
+        ]
+    },
+    {
+        "id": "A9B0C1D2-E3F4-45A6-B7C8-D9E0F1A2B3C4",
+        "title": "Core Stability on Sand",
+        "difficulty": "Hard",
+        "imageName": "task_core_sand",
+        "description": "Using the instability of sand to engage the deep core muscles essential for balance and injury prevention.",
+        "isPremium": true,
+        "steps": [
+            {
+                "id": "S1",
+                "title": "Plank Hold",
+                "description": "Forearm plank on the sand. Keep hips level.",
+                "durationSeconds": 60
+            },
+            {
+                "id": "S2",
+                "title": "Russian Twists",
+                "description": "Sit on sand, lean back, elevate feet. Twist torso side to side.",
+                "durationSeconds": 45
+            },
+            {
+                "id": "S3",
+                "title": "Mountain Climbers",
+                "description": "Plank position. Drive knees to chest rapidly. Fight the sinking sand.",
+                "durationSeconds": 45
+            },
+            {
+                "id": "S4",
+                "title": "Rest",
+                "description": "Deep breathing. Relax the abs.",
+                "durationSeconds": 60
+            },
+            {
+                "id": "S5",
+                "title": "Single Leg Glute Bridge",
+                "description": "Lie on back. One foot on sand, lift hips. Feel the hamstring engage.",
+                "durationSeconds": 45
+            },
+            {
+                "id": "S6",
+                "title": "Superman Hold",
+                "description": "Lie on stomach. Lift arms and legs. Hold.",
+                "durationSeconds": 60
+            }
+        ]
+    },
+    {
+        "id": "B0C1D2E3-F4A5-46B7-C8D9-E0F1A2B3C4D5",
+        "title": "Goal Precision: Top Bin Challenge",
+        "difficulty": "Medium",
+        "imageName": "task_precision_kick",
+        "description": "Improving shooting accuracy under fatigue conditions. Can you hit the target when tired?",
+        "isPremium": true,
+        "steps": [
+            {
+                "id": "S1",
+                "title": "Set Up",
+                "description": "Place ball on the edge of the box. Mark the top corners of the goal.",
+                "durationSeconds": 60
+            },
+            {
+                "id": "S2",
+                "title": "Static Shots",
+                "description": "Take 5 shots aiming for top corners. Focus on technique.",
+                "durationSeconds": 180
+            },
+            {
+                "id": "S3",
+                "title": "Shuttle Run",
+                "description": "Sprint to the halfway line and back to induce fatigue.",
+                "durationSeconds": 40
+            },
+            {
+                "id": "S4",
+                "title": "Fatigued Shot",
+                "description": "Immediately take a shot. Compose yourself quickly.",
+                "durationSeconds": 20
+            },
+            {
+                "id": "S5",
+                "title": "Repeat Shuttle",
+                "description": "Sprint again. Push through the burning legs.",
+                "durationSeconds": 40
+            },
+            {
+                "id": "S6",
+                "title": "Final Shot",
+                "description": "Last shot. Make it count.",
+                "durationSeconds": 20
+            }
+        ]
+    },
+    {
+        "id": "C1D2E3F4-A5B6-47C8-D9E0-F1A2B3C4D5E6",
+        "title": "Endurance: The Long Run",
+        "difficulty": "Medium",
+        "imageName": "task_endurance_run",
+        "description": "Building aerobic base in dry heat. Focus on pacing and hydration management.",
+        "isPremium": false,
+        "steps": [
+            {
+                "id": "S1",
+                "title": "Mental Prep",
+                "description": "Visualize the route. Check water supply.",
+                "durationSeconds": 60
+            },
+            {
+                "id": "S2",
+                "title": "Warm Up Walk",
+                "description": "5 minutes brisk walking.",
+                "durationSeconds": 300
+            },
+            {
+                "id": "S3",
+                "title": "Steady State Run",
+                "description": "Run at a conversational pace. Do not mourn the sun.",
+                "durationSeconds": 600
+            },
+            {
+                "id": "S4",
+                "title": "Tempo Increase",
+                "description": "Increase speed slightly for 3 minutes. Test your lungs.",
+                "durationSeconds": 180
+            },
+            {
+                "id": "S5",
+                "title": "Return to Steady",
+                "description": "Drop back to initial pace. Recover on the move.",
+                "durationSeconds": 300
+            },
+            {
+                "id": "S6",
+                "title": "Cool Down Walk",
+                "description": "Walk until heart rate is below 100.",
+                "durationSeconds": 300
+            }
+        ]
+    },
+    {
+        "id": "D2E3F4A5-B6C7-48D9-E0F1-A2B3C4D5E6F7",
+        "title": "Agility Ladder (Drawn in Sand)",
+        "difficulty": "Easy",
+        "imageName": "task_agility_ladder_sand",
+        "description": "You don't need equipment. Draw a ladder in the sand and get to work.",
+        "isPremium": false,
+        "steps": [
+            {
+                "id": "S1",
+                "title": "Draw the Ladder",
+                "description": "Use your foot to draw a 10-rung ladder in the sand/dirt.",
+                "durationSeconds": 60
+            },
+            {
+                "id": "S2",
+                "title": "One Foot in Each",
+                "description": "Run through, placing one foot in each square. High knees.",
+                "durationSeconds": 60
+            },
+            {
+                "id": "S3",
+                "title": "Ickey Shuffle",
+                "description": "Two in, one out pattern. Rhythm is key.",
+                "durationSeconds": 120
+            },
+            {
+                "id": "S4",
+                "title": "Lateral High Knees",
+                "description": "Side step through the ladder with high knee drive.",
+                "durationSeconds": 60
+            },
+            {
+                "id": "S5",
+                "title": "In and Out Jumps",
+                "description": "Jump feet in together, then out wide. Plyometric focus.",
+                "durationSeconds": 60
+            },
+            {
+                "id": "S6",
+                "title": "Sprint Out",
+                "description": "Finish the ladder with a 5m sprint.",
+                "durationSeconds": 30
+            }
+        ]
+    },
+    {
+        "id": "E3F4A5B6-C7D8-49E0-F1A2-B3C4D5E6F7A8",
+        "title": "Yoga for Stiff Hips",
+        "difficulty": "Easy",
+        "imageName": "task_yoga_hips",
+        "description": "Running on hard ground tightens hips. Loosen them up.",
+        "isPremium": false,
+        "steps": [
+            {
+                "id": "S1",
+                "title": "Child's Pose",
+                "description": "Knees wide, forehead to ground. Breathe into hips.",
+                "durationSeconds": 60
+            },
+            {
+                "id": "S2",
+                "title": "Lizard Lunge",
+                "description": "Right foot forward, hands inside foot. Sink hips.",
+                "durationSeconds": 60
+            },
+            {
+                "id": "S3",
+                "title": "Pigeon Pose",
+                "description": "Right shin across mat. Fold forward. Deep stretch.",
+                "durationSeconds": 90
+            },
+            {
+                "id": "S4",
+                "title": "Switch Sides",
+                "description": "Repeat Lizard and Pigeon on left side.",
+                "durationSeconds": 150
+            },
+            {
+                "id": "S5",
+                "title": "Happy Baby",
+                "description": "Lie on back, grab outsides of feet. Rock gently.",
+                "durationSeconds": 60
+            },
+            {
+                "id": "S6",
+                "title": "Savasana",
+                "description": "Lie flat. Absorb the practice.",
+                "durationSeconds": 120
+            }
+        ]
+    },
+    {
+        "id": "F4A5B6C7-D8E9-40F1-A2B3-C4D5E6F7A8B9",
+        "title": "Reaction speed: The Wall",
+        "difficulty": "Medium",
+        "imageName": "task_wall_reaction",
+        "description": "Using a wall to improve first touch and reaction time.",
+        "isPremium": true,
+        "steps": [
+            {
+                "id": "S1",
+                "title": "One Touch Pass",
+                "description": "Close to wall. Right foot only. Keep it fluid.",
+                "durationSeconds": 60
+            },
+            {
+                "id": "S2",
+                "title": "One Touch Pass Left",
+                "description": "Left foot only. Focus on weak foot.",
+                "durationSeconds": 60
+            },
+            {
+                "id": "S3",
+                "title": "Two Touch",
+                "description": "Control with one foot, pass with the other.",
+                "durationSeconds": 120
+            },
+            {
+                "id": "S4",
+                "title": "Volleys",
+                "description": "Throw ball at wall, control the rebound with chest/thigh.",
+                "durationSeconds": 120
+            },
+            {
+                "id": "S5",
+                "title": "Unpredictable Rebound",
+                "description": "Kick harder or against an uneven spot. React!",
+                "durationSeconds": 120
+            },
+            {
+                "id": "S6",
+                "title": "Cool Down",
+                "description": "Gentle juggling.",
+                "durationSeconds": 60
+            }
+        ]
+    },
+    {
+        "id": "A5B6C7D8-E9F0-41A2-B3C4-D5E6F7A8B9C0",
+        "title": "Power Shooting",
+        "difficulty": "Hard",
+        "imageName": "task_power_shooting",
+        "description": "Developing raw power in your strike. Technique over force.",
+        "isPremium": true,
+        "steps": [
+            {
+                "id": "S1",
+                "title": "Technique drills",
+                "description": "Strike stationary ball into net. Focus on locking ankle.",
+                "durationSeconds": 120
+            },
+            {
+                "id": "S2",
+                "title": "Rolling Ball Strike",
+                "description": "Push ball forward, run onto it, strike. Timing focus.",
+                "durationSeconds": 180
+            },
+            {
+                "id": "S3",
+                "title": "Bouncing Ball Strike",
+                "description": "Drop ball, strike on the half-volley. Keep knee over ball.",
+                "durationSeconds": 180
+            },
+            {
+                "id": "S4",
+                "title": "Distance Shooting",
+                "description": "Move back to 25m. Aim for power and flight.",
+                "durationSeconds": 180
+            },
+            {
+                "id": "S5",
+                "title": "Free Kicks",
+                "description": "Place ball. 3 steps back. Visualise flight path.",
+                "durationSeconds": 180
+            },
+            {
+                "id": "S6",
+                "title": "Collect and Rest",
+                "description": "Retrieve balls. Walk back.",
+                "durationSeconds": 60
+            }
+        ]
+    },
+    {
+        "id": "B6C7D8E9-F0A1-42B3-C4D5-E6F7A8B9C0D1",
+        "title": "Speed Endurance Shuttle",
+        "difficulty": "Hard",
+        "imageName": "task_shuttle_run",
+        "description": "The ultimate test of stamina. Can you maintain speed when tired?",
+        "isPremium": true,
+        "steps": [
+            {
+                "id": "S1",
+                "title": "Warm Up",
+                "description": "Thorough warm up required.",
+                "durationSeconds": 300
+            },
+            {
+                "id": "S2",
+                "title": "5-10-5 Shuttle",
+                "description": "Sprint 5m, touch line, back 10m, touch, back 5m.",
+                "durationSeconds": 30
+            },
+            {
+                "id": "S3",
+                "title": "Rest",
+                "description": "Complete rest. 1:3 work rest ratio.",
+                "durationSeconds": 90
+            },
+            {
+                "id": "S4",
+                "title": "Repeat Shuttle",
+                "description": "Go again. explode out of the turns.",
+                "durationSeconds": 30
+            },
+            {
+                "id": "S5",
+                "title": "Rest",
+                "description": "Breathe.",
+                "durationSeconds": 90
+            },
+            {
+                "id": "S6",
+                "title": "Final Burst",
+                "description": "Last one. Max effort.",
+                "durationSeconds": 30
+            }
+        ]
+    },
+    {
+        "id": "C7D8E9F0-A1B2-43C4-D5E6-F7A8B9C0D1E2",
+        "title": "First Touch Masterclass",
+        "difficulty": "Medium",
+        "imageName": "task_first_touch_control",
+        "description": "Killing the ball dead excessively hard ground.",
+        "isPremium": false,
+        "steps": [
+            {
+                "id": "S1",
+                "title": "High Ball Toss",
+                "description": "Throw ball 5m high. Control with laces.",
+                "durationSeconds": 120
+            },
+            {
+                "id": "S2",
+                "title": "Outside Foot Kill",
+                "description": "High ball. Control with outside of foot to guide it away.",
+                "durationSeconds": 120
+            },
+            {
+                "id": "S3",
+                "title": "Thigh Control",
+                "description": "Control on quad, drop to foot.",
+                "durationSeconds": 120
+            },
+            {
+                "id": "S4",
+                "title": "Chest Control",
+                "description": "Cushion ball on chest, volley to hand.",
+                "durationSeconds": 120
+            },
+            {
+                "id": "S5",
+                "title": "Directional Control",
+                "description": "First touch must take you into space.",
+                "durationSeconds": 120
+            },
+            {
+                "id": "S6",
+                "title": "Review",
+                "description": "Which surface was hardest? Reflect.",
+                "durationSeconds": 60
+            }
+        ]
+    },
+    {
+        "id": "D8E9F0A1-B2C3-44D5-E6F7-A8B9C0D1E2F3",
+        "title": "Defensive Stance",
+        "difficulty": "Easy",
+        "imageName": "task_defensive_jockey",
+        "description": "Improving your jockeying and body position.",
+        "isPremium": false,
+        "steps": [
+            {
+                "id": "S1",
+                "title": "Jockey Position",
+                "description": "Knees bent, on toes, side on. Hold.",
+                "durationSeconds": 60
+            },
+            {
+                "id": "S2",
+                "title": "Lateral Shuffle",
+                "description": "Shuffle left and right maintaining stance.",
+                "durationSeconds": 60
+            },
+            {
+                "id": "S3",
+                "title": "Backward Shuffle",
+                "description": "Retreating diagonally while facing forward.",
+                "durationSeconds": 60
+            },
+            {
+                "id": "S4",
+                "title": "Pivot",
+                "description": "Quickly switch leading leg without crossing feet.",
+                "durationSeconds": 60
+            },
+            {
+                "id": "S5",
+                "title": "Shadow Defence",
+                "description": "Imagine an attacker. React to their feints.",
+                "durationSeconds": 120
+            },
+            {
+                "id": "S6",
+                "title": "Shake Out",
+                "description": "Relax the legs.",
+                "durationSeconds": 60
+            }
+        ]
+    },
+    {
+        "id": "E9F0A1B2-C3D4-45E6-F7A8-B9C0D1E2F3A4",
+        "title": "Heading Technique",
+        "difficulty": "Medium",
+        "imageName": "task_heading_technique",
+        "description": "Clean contact for power and safety.",
+        "isPremium": false,
+        "steps": [
+            {
+                "id": "S1",
+                "title": "Self Header",
+                "description": "Throw up, head forward. Eyes open, mouth closed.",
+                "durationSeconds": 60
+            },
+            {
+                "id": "S2",
+                "title": "Defensive Header",
+                "description": "Head for height and distance. Under the ball.",
+                "durationSeconds": 60
+            },
+            {
+                "id": "S3",
+                "title": "Attacking Header",
+                "description": "Head down towards ground. Over the ball.",
+                "durationSeconds": 60
+            },
+            {
+                "id": "S4",
+                "title": "Jump Timing",
+                "description": "Practice the timing of the leap without the ball.",
+                "durationSeconds": 60
+            },
+            {
+                "id": "S5",
+                "title": "Jump Header",
+                "description": "Combine jump and header. Use arms for lift.",
+                "durationSeconds": 120
+            },
+            {
+                "id": "S6",
+                "title": "Rest",
+                "description": " Neck stretches.",
+                "durationSeconds": 60
+            }
+        ]
+    },
+    {
+        "id": "F0A1B2C3-D4E5-46F7-A8B9-C0D1E2F3A4B5",
+        "title": "Cooldown Yoga",
+        "difficulty": "Easy",
+        "imageName": "task_flexibility_yoga",
+        "description": "Essential recovery after a hard session.",
+        "isPremium": false,
+        "steps": [
+            {
+                "id": "S1",
+                "title": "Forward Fold",
+                "description": "Stand tall, fold forward. Hang.",
+                "durationSeconds": 60
+            },
+            {
+                "id": "S2",
+                "title": "Down Dog",
+                "description": "Push heels towards ground. Stretch calves.",
+                "durationSeconds": 60
+            },
+            {
+                "id": "S3",
+                "title": "Cobra",
+                "description": "Hips on floor, chest up. Stretch abs.",
+                "durationSeconds": 60
+            },
+            {
+                "id": "S4",
+                "title": "Twist",
+                "description": "Seated spinal twist.",
+                "durationSeconds": 60
+            },
+            {
+                "id": "S5",
+                "title": "Hamstring Stretch",
+                "description": "Seated single leg fold.",
+                "durationSeconds": 60
+            },
+            {
+                "id": "S6",
+                "title": "Meditation",
+                "description": "Close eyes. Focus on breath.",
+                "durationSeconds": 120
+            }
+        ]
+    }
+]
