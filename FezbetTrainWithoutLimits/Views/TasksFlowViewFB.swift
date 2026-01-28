@@ -33,6 +33,8 @@ struct TasksFlowViewFB: View {
                         .font(.largeTitle)
                         .fontWeight(.black)
                         .foregroundColor(.white)
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal)
                     
                     Text("You have mastered this session.")
                         .foregroundColor(.gray)

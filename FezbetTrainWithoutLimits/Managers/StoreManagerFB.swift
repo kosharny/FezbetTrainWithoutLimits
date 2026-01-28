@@ -9,7 +9,7 @@ class StoreManagerFB: ObservableObject {
     
     private var transactionListener: Task<Void, Error>?
     
-    private let productIds = ["com.fezbet.theme.oasis", "com.fezbet.theme.sunset"]
+    private let productIds = ["premium_theme_oasis", "premium_theme_sunset"]
     
     init() {
         transactionListener = listenForTransactions()
@@ -68,6 +68,12 @@ class StoreManagerFB: ObservableObject {
     func restorePurchases() async {
         try? await AppStore.sync()
         await updatePurchasedProducts()
+    }
+    
+    nonisolated func paymentQueue(_ queue: SKPaymentQueue,
+                                  shouldAddStorePayment payment: SKPayment,
+                                  for product: SKProduct) -> Bool {
+        return true
     }
 }
 

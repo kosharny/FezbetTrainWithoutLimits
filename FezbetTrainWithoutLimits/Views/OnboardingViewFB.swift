@@ -86,7 +86,7 @@ struct OnboardingViewFB: View {
                         .foregroundColor(themeManager.currentTheme.textColor.opacity(0.6))
                         .padding()
                 }
-                .padding(.top, 40)
+                .padding(.top, 20)
                 .padding(.trailing, 20),
                 alignment: .topTrailing
             )

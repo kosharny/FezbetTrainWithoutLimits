@@ -1,4 +1,5 @@
 import SwiftUI
+import StoreKit
 
 struct SettingsViewFB: View {
     @EnvironmentObject var themeManager: ThemeManagerFB
@@ -12,7 +13,7 @@ struct SettingsViewFB: View {
     @State private var purchaseResult: (success: Bool, message: String) = (false, "")
     
     // Product IDs
-    private let themeProductIDs = ["", "com.fezbet.theme.oasis", "com.fezbet.theme.sunset"]
+    private let themeProductIDs = ["", "premium_theme_oasis", "premium_theme_sunset"]
     
     var body: some View {
         ZStack {
@@ -97,8 +98,11 @@ struct SettingsViewFB: View {
                                         Spacer()
                                         
                                         if isLocked {
+                                            Text(getPrice(for: productID))
+                                                .font(.subheadline)
+                                                .foregroundColor(themeManager.currentTheme.primaryColor)
                                             Image(systemName: "lock.fill")
-                                                .foregroundColor(.gray)
+                                                .foregroundColor(themeManager.currentTheme.primaryColor)
                                         } else if isSelected {
                                             Image(systemName: "checkmark.circle.fill")
                                                 .foregroundColor(themeManager.currentTheme.primaryColor)
@@ -165,69 +169,132 @@ struct SettingsViewFB: View {
                         }
                         .padding(.horizontal)
                         
-                        Spacer(minLength: 50)
+                        Spacer(minLength: 80)
                     }
                     .padding(.top)
                 }
             }
+            
+            // MARK: - Custom Alerts Overlay
+            if showingConfirmationAlert || showingResultAlert {
+                ZStack {
+                    Color.black.opacity(0.6).ignoresSafeArea()
+                        .onTapGesture {
+                            withAnimation {
+                                showingConfirmationAlert = false
+                                showingResultAlert = false
+                            }
+                        }
+                    
+                    if showingConfirmationAlert {
+                        VStack(spacing: 20) {
+                            Image(systemName: "lock.open.fill")
+                                .font(.system(size: 50))
+                                .foregroundColor(themeManager.currentTheme.primaryColor)
+                            
+                            Text("Unlock Premium Content")
+                                .font(.title2)
+                                .bold()
+                                .foregroundColor(.white)
+                                .fixedSize(horizontal: false, vertical: true)
+                            
+                            VStack(spacing: 8) {
+                                Text("Do you want to purchase this theme for")
+                                    .foregroundColor(.gray)
+                                
+                                Text(getPrice(for: pendingPurchaseID ?? ""))
+                                    .font(.title3).bold()
+                                    .foregroundColor(themeManager.currentTheme.primaryColor)
+                            }
+                            .multilineTextAlignment(.center)
+                            .fixedSize(horizontal: false, vertical: true)
+                            
+                            HStack(spacing: 15) {
+                                Button(action: {
+                                    withAnimation { showingConfirmationAlert = false }
+                                }) {
+                                    Text("Cancel")
+                                        .fontWeight(.bold)
+                                        .foregroundColor(.white)
+                                        .frame(maxWidth: .infinity)
+                                        .padding(.vertical, 12)
+                                        .background(Color.gray.opacity(0.3))
+                                        .cornerRadius(15)
+                                }
+                                
+                                Button(action: {
+                                    withAnimation { showingConfirmationAlert = false }
+                                    performPurchase()
+                                }) {
+                                    Text("Unlock Now")
+                                        .fontWeight(.bold)
+                                        .foregroundColor(themeManager.currentTheme.backgroundColor)
+                                        .frame(maxWidth: .infinity)
+                                        .padding(.vertical, 12)
+                                        .background(themeManager.currentTheme.primaryColor)
+                                        .cornerRadius(15)
+                                }
+                            }
+                            .padding(.top, 10)
+                        }
+                        .padding(30)
+                        .background(Color(hex: "2A2824"))
+                        .cornerRadius(20)
+                        .shadow(radius: 20)
+                        .frame(maxWidth: 400)
+                        .padding(.horizontal, 24)
+                        .transition(.scale.combined(with: .opacity))
+                    }
+                    
+                    if showingResultAlert {
+                        VStack(spacing: 20) {
+                            Image(systemName: purchaseResult.success ? "checkmark.circle.fill" : "xmark.circle.fill")
+                                .font(.system(size: 50))
+                                .foregroundColor(purchaseResult.success ? .green : .red)
+                            
+                            Text(purchaseResult.success ? "Success!" : "Error")
+                                .font(.title2)
+                                .bold()
+                                .foregroundColor(.white)
+                            
+                            Text(purchaseResult.message)
+                                .font(.body)
+                                .foregroundColor(.gray)
+                                .multilineTextAlignment(.center)
+                                .fixedSize(horizontal: false, vertical: true)
+                            
+                            Button(action: {
+                                withAnimation { showingResultAlert = false }
+                            }) {
+                                Text("OK")
+                                    .fontWeight(.bold)
+                                    .foregroundColor(themeManager.currentTheme.backgroundColor)
+                                    .frame(maxWidth: .infinity)
+                                    .padding(.vertical, 12)
+                                    .background(themeManager.currentTheme.primaryColor)
+                                    .cornerRadius(15)
+                            }
+                        }
+                        .padding(30)
+                        .background(Color(hex: "2A2824"))
+                        .cornerRadius(20)
+                        .shadow(radius: 20)
+                        .frame(maxWidth: 400)
+                        .padding(.horizontal, 24)
+                        .transition(.scale.combined(with: .opacity))
+                    }
+                }
+                .zIndex(2)
+            }
         }
         .navigationBarHidden(true)
-        
-        // MARK: - Alerts
-        // Confirmation Alert
-        .alert(isPresented: $showingConfirmationAlert) {
-            Alert(
-                title: Text("Unlock Premium Content"),
-                message: Text("Use your points to unlock this premium content? (Demo: This simulates a purchase)"),
-                primaryButton: .default(Text("Unlock Now")) {
-                    performPurchase()
-                },
-                secondaryButton: .cancel()
-            )
-        }
-        // Result Alert (Overlay approach to avoid conflict)
-        .overlay(
-             Group {
-                 if showingResultAlert {
-                     Color.black.opacity(0.4).ignoresSafeArea()
-                         .onTapGesture { showingResultAlert = false }
-                     
-                     VStack(spacing: 20) {
-                         Image(systemName: purchaseResult.success ? "checkmark.circle.fill" : "xmark.circle.fill")
-                             .font(.system(size: 50))
-                             .foregroundColor(purchaseResult.success ? .green : .red)
-                         
-                         Text(purchaseResult.success ? "Success!" : "Error")
-                             .font(.title2)
-                             .bold()
-                             .foregroundColor(.white)
-                         
-                         Text(purchaseResult.message)
-                             .font(.body)
-                             .foregroundColor(.gray)
-                             .multilineTextAlignment(.center)
-                         
-                         Button(action: { showingResultAlert = false }) {
-                             Text("OK")
-                                 .fontWeight(.bold)
-                                 .foregroundColor(.white)
-                                 .padding(.horizontal, 30)
-                                 .padding(.vertical, 10)
-                                 .background(themeManager.currentTheme.primaryColor)
-                                 .cornerRadius(20)
-                         }
-                     }
-                     .padding(30)
-                     .background(Color(hex: "2A2824"))
-                     .cornerRadius(20)
-                     .shadow(radius: 20)
-                     .padding(40)
-                 }
-             }
-         )
     }
     
-    // MARK: - Helper Methods
+    private func getPrice(for productID: String) -> String {
+        let manager = storeManager
+        return manager.myProducts.first(where: { $0.id == productID })?.displayPrice ?? ""
+    }
+    
     
     private func performPurchase() {
         guard let pid = pendingPurchaseID else { return }
